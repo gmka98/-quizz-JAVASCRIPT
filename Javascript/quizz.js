@@ -5,7 +5,7 @@ let username = readlineSync.question("What's your Name? : \n");
 console.log('Hello' + username + ", Leeeeeeeeeeet'sss GOOOOOOO");
 
 console.log('Rules & Instructions: ');
-console.log('1.', username + ', There are '+ question.lenght + 'Questions about javascript')
+console.log('1.', username + ', There are 5 Questions about javascript')
 console.log('2. You will get 2 points on each Right Answer.');
 console.log('3. One Point will be remove from your score if you chose the wrong Answer');
 console.log('4. In MCQ based questions you have to type Serial Number / Index Value')
@@ -58,7 +58,7 @@ function quiz(question,answer){
     if(score < 0){
       score = 0;
     }
-    console.log(chalk.cyan('Score is: ',score));
+    console.log('Score is: ',score);
   }
   
   function quizMcq(listOfAnswers,question,answer){
@@ -85,7 +85,7 @@ function quiz(question,answer){
     console.log('*******************************');
   }
   
-  for(var i = 0;i < mcqList.length; i++){
+  for(var i = 0;i < MCQList.length; i++){
     console.log('\n');
     quizMcq(MCQList[i].array,MCQList[i].question,MCQList[i].answer);
     console.log('*******************************');
